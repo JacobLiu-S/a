@@ -1,0 +1,29 @@
+1. fillna(), dropna(), with inplace= True or False
+
+2. difference between view and copy
+
+https://www.youtube.com/watch?v=4R4WsDJ-KVc&t=607s
+
+3. create empty dataframe
+
+https://thispointer.com/pandas-how-to-create-an-empty-dataframe-and-append-rows-columns-to-it-in-python/
+
+pd.DataFrame(columns = )
+
+4. len(df) = number of rows in df
+
+5. iloc and loc, iloc selected by location, loc selected by label
+
+6. dealing with missing data.
+
+https://www.geeksforgeeks.org/working-with-missing-data-in-pandas/
+
+7. df.append(df2) and df = df.append(df2) are not the same.
+
+8. df['<label>'].unique() 
+
+>>pd.Series([2,1,3,3],name='A').unique()
+
+>>array([2, 1, 3])
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.unique.html
