@@ -1,0 +1,49 @@
+1. 批量解压tar.bz2: find -maxdepth 1 -name "*.bz2"|xargs -i tar xvjf {}
+
+https://blog.csdn.net/silentwolfyh/article/details/53909518
+
+解压.tar: tar -xvf .tar    解压zip: unzip .zip
+
+https://blog.csdn.net/zhongnanjun_3/article/details/6312678
+
+2. 回退一级目录：cd ..
+
+3. cd ./<folder_to_open>
+
+4.sh文件执行方式及区别
+
+source <>.sh, sh <>.sh
+
+5. 移动文件夹：
+
+mv /usr/lib/* /zone， 是将 /usr/lib/下所有的东西移到/zone/中。
+
+mv /usr/lib/*.txt /zone， 是将lib下以txt结尾的所有文件移到/zone中。
+
+6. 运行py程序：python 
+
+退出，cril+z或者exit()
+
+7. 删除多个文件， rm -r <> <> <>
+
+删除指定类型文件：https://blog.csdn.net/csdn565973850/article/details/78856250
+
+8. 重命名：mv fromfile tofile
+
+如把文件a.txt得命名为b.txt，可以是mv a.txt b.txt。
+
+mv一次只能重命名一个文件，而且，它是移动命令。如果tofile已经存在的话，会直接装原文件覆盖，从而造成文件的丢失。当然有选项可以对已存在的文件进行提示，还是决定看看rename吧。
+
+例子：将目录A重命名为B
+
+mv A B
+
+例子：将/a目录移动到/b下，并重命名为c
+
+mv /a /b/c
+
+https://blog.csdn.net/Inuyasha1121/article/details/51644269
+
+9.查看目录下的文件数量：
+
+https://blog.csdn.net/xh_hit/article/details/80651565
