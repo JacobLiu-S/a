@@ -1,0 +1,28 @@
+x = np.load('something.npz')
+lst = x.files #to see the structure
+
+In google colab, !unzip zipfile can be used to extract zip file
+
+python json stores dic object(https://stackabuse.com/reading-and-writing-json-to-a-file-in-python/)
+with open('data.txt', 'w') as outfile:
+  json.dump(data, outfile)
+with open('data.txt') as json_file:
+  data = json.load(json_file)
+json.dumps(data, indent=4)
+$ echo '{"people":[{"name":"Scott", "website":"stackabuse.com", "from":"Nebraska"}]}' | python -m json.tool
+
+from IPython.display import Image
+Image('bp.png')
+
+!rm test.json #delete file in colab
+
+os.path.join('images/', '01.jpg') #output images/01.jpg
+sorted(os.listdir(path))
+
+import numpy as np
+arr1 = np.arange(8).reshape(2, 4)
+arr2 = np.arange(10).reshape(2, 5)
+np.savez('mat.npz', name1=arr1, name2=arr2)
+data = np.load('mat.npz')
+print data['name1']
+print data['name2']
